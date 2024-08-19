@@ -38,4 +38,10 @@ class CMButtonStyle: UIButton {
             self.layer.backgroundColor = backGroundColor.cgColor
         }
     }
+    
+    @IBInspectable  var setTitleColor: UIColor = UIColor.clear {
+        didSet {
+            self.setTitleColor(setTitleColor, for: .normal)
+        }
+    }
 }
